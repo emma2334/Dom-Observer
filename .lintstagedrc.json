@@ -1,0 +1,6 @@
+{
+  "*.{ts,tsx}": ["yarn eslint", "prettier --parser typescript --write"],
+  "*.css": ["prettier --parser css --write"],
+  "**/package.json": ["prettier-package-json --write"],
+  "*.json": ["prettier --parser json --write"]
+}
