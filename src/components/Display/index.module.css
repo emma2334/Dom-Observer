@@ -1,5 +1,6 @@
 #display {
   flex: 1;
+  padding: 10px;
   min-height: 500px;
   overflow-x: scroll;
   background-color: #fff;

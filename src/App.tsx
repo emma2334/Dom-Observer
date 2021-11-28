@@ -9,7 +9,7 @@ import demo from './demo'
 const App = () => {
   return (
     <div className={style.container}>
-      <Editor code={demo} />
+      <Editor example={demo} />
       <button id={style.convert}>Convert</button>
       <Display code={demo} />
     </div>

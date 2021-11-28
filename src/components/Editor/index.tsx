@@ -1,22 +1,27 @@
-import React from 'react'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import theme from 'react-syntax-highlighter/dist/esm/styles/hljs/a11y-light'
+import React, { useState } from 'react'
+import CodeEditor from 'react-simple-code-editor'
+import Prism from 'prismjs'
+import 'prismjs/themes/prism.css'
 import style from './index.module.css'
 
 interface PropsType {
-  code: string
+  example: string
 }
 
-const Editor = ({ code }: PropsType) => {
+const Editor = ({ example }: PropsType) => {
+  const [code, setCode] = useState(example)
   return (
-    <SyntaxHighlighter
+    <CodeEditor
       id={style.editor}
-      contentEditable={true}
-      language="htmlbars"
-      style={theme}
-    >
-      {code}
-    </SyntaxHighlighter>
+      value={code}
+      onValueChange={code => setCode(code)}
+      highlight={code => Prism.highlight(code, Prism.languages.html, 'html')}
+      padding={10}
+      style={{
+        fontFamily: '"Fira code", "Fira Mono", monospace',
+        fontSize: 12,
+      }}
+    />
   )
 }
 
