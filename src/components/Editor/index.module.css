@@ -1,0 +1,14 @@
+#editor {
+  flex: 1;
+  margin: 0;
+  min-height: 500px;
+  overflow-x: scroll;
+  background-color: #fff;
+  white-space: pre;
+}
+
+@media (min-width: 992px) {
+  #editor {
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,12 @@
+#display {
+  flex: 1;
+  min-height: 500px;
+  overflow-x: scroll;
+  background-color: #fff;
+}
+
+@media (min-width: 992px) {
+  #display {
+    min-height: 100vh;
+  }
+}

@@ -1,17 +1,17 @@
 import React from 'react'
+
+import Editor from './components/Editor'
+import Display from './components/Display'
+
 import style from './App.module.css'
 import demo from './demo'
 
 const App = () => {
   return (
-    <div className={style.App}>
-      <div className={style.container}>
-        <div id={style.html} contentEditable={true}>
-          {demo}
-        </div>
-        <button id={style.convert}>Convert</button>
-        <div id={style.dom} dangerouslySetInnerHTML={{ __html: demo }} />
-      </div>
+    <div className={style.container}>
+      <Editor code={demo} />
+      <button id={style.convert}>Convert</button>
+      <Display code={demo} />
     </div>
   )
 }
