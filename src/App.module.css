@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+}
+
+#dom,
+#html {
+  flex: 1;
+  min-height: 500px;
+}
+
+#dom {
+  background: #fff;
+}
+
+#convert:after {
+  content: '⇓';
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    flex-direction: row;
+    max-width: 960px;
+  }
+
+  #dom,
+  #html {
+    height: 100vh;
+  }
+
+  #convert:after {
+    content: '⇒';
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
