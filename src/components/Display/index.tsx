@@ -1,8 +1,10 @@
 import React, { useRef } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import prettier from 'prettier/standalone'
 import htmlParser from 'prettier/parser-html'
+
 import { update } from '../../features/editor'
+
 import style from './index.module.css'
 
 interface PropsType {

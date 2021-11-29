@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { edit, selectEditor } from '../../features/editor'
+import React from 'react'
+import { useDispatch } from 'react-redux'
+import { edit } from '../../features/editor'
+
 import CodeEditor from 'react-simple-code-editor'
 import Prism from 'prismjs'
 import 'prismjs/themes/prism.css'
+
 import style from './index.module.css'
 
 interface PropsType {

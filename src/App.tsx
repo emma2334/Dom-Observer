@@ -1,12 +1,12 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+
 import { selectEditor } from './features/editor'
 import { update, selectDom } from './features/dom'
 import Editor from './components/Editor'
 import Display from './components/Display'
 
 import style from './App.module.css'
-import demo from './demo'
 
 const App = () => {
   const editor = useSelector(selectEditor)
