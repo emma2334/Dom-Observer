@@ -19,11 +19,17 @@ export const editorSlice = createSlice({
   initialState,
   reducers: {
     edit: (state, action) => {
-      state.code = action.payload
+      state.code = action.payload.replace(
+        /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
+        '',
+      )
       state.sync = false
     },
     update: (state, action) => {
-      state.code = action.payload
+      state.code = action.payload.replace(
+        /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
+        '',
+      )
       state.sync = true
     },
   },
