@@ -7,16 +7,15 @@ import 'prismjs/themes/prism.css'
 import style from './index.module.css'
 
 interface PropsType {
-  example: string
+  code: string
 }
 
-const Editor = ({ example }: PropsType) => {
-  const code = useSelector(selectEditor)
+const Editor = ({ code }: PropsType) => {
   const dispatch = useDispatch()
   return (
     <CodeEditor
       id={style.editor}
-      value={code.code}
+      value={code}
       onValueChange={code => dispatch(update(code))}
       highlight={code => Prism.highlight(code, Prism.languages.html, 'html')}
       padding={10}

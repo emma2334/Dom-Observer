@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import observerSlice from '../features/editor'
+import editorSlice from '../features/editor'
+import domSlice from '../features/dom'
 
 export const store = configureStore({
   reducer: {
-    editor: observerSlice,
+    editor: editorSlice,
+    dom: domSlice,
   },
 })
 
