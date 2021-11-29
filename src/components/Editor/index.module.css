@@ -4,9 +4,3 @@
   min-height: 500px;
   background-color: #fff;
 }
-
-@media (min-width: 992px) {
-  #editor {
-    min-height: 100vh;
-  }
-}

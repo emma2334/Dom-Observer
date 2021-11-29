@@ -1,8 +1,38 @@
 .container {
-  display: flex;
-  flex-direction: column;
   margin: auto;
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container > h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #fff;
+}
+
+.github {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.github:hover {
+  color: #c3c3c3;
+}
+
+svg {
+  fill: currentColor;
+}
+
+#convert {
+  border-style: solid none;
+  border-width: 1px;
 }
 
 #convert:after {
@@ -23,8 +53,15 @@
 
 @media (min-width: 992px) {
   .container {
-    flex-direction: row;
     max-width: 960px;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  #convert {
+    border-style: none solid;
   }
 
   #convert:after {
