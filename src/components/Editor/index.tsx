@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { update, selectEditor } from '../../features/editor'
 import CodeEditor from 'react-simple-code-editor'
 import Prism from 'prismjs'
 import 'prismjs/themes/prism.css'
@@ -9,12 +11,13 @@ interface PropsType {
 }
 
 const Editor = ({ example }: PropsType) => {
-  const [code, setCode] = useState(example)
+  const code = useSelector(selectEditor)
+  const dispatch = useDispatch()
   return (
     <CodeEditor
       id={style.editor}
-      value={code}
-      onValueChange={code => setCode(code)}
+      value={code.code}
+      onValueChange={code => dispatch(update(code))}
       highlight={code => Prism.highlight(code, Prism.languages.html, 'html')}
       padding={10}
       style={{
