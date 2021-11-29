@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { RootState } from '../app/store'
 import demo from '../demo'
+import convertToInlineCss from '../utils/convertToInlineCss'
 
 interface DomState {
   code: string
@@ -15,7 +16,7 @@ export const domSlice = createSlice({
   initialState,
   reducers: {
     update: (state, action) => {
-      state.code = action.payload
+      state.code = convertToInlineCss(action.payload)
     },
   },
 })
