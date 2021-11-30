@@ -8,8 +8,8 @@ const Editor = () => {
     <div id={style.usage}>
       <h3>Usage</h3>
       <ul>
-        {content.map(e => (
-          <li>{e}</li>
+        {content.map((e, i) => (
+          <li key={i}>{e}</li>
         ))}
       </ul>
     </div>
