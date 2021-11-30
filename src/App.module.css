@@ -3,7 +3,7 @@
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .row {
   display: flex;
@@ -32,8 +32,11 @@ svg {
 }
 
 #convert {
+  margin: 0;
+  padding: 10px;
   border-style: solid none;
   border-width: 1px;
+  border-color: #000;
 }
 
 #convert:after {

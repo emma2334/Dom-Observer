@@ -9,7 +9,7 @@ interface PropsType {
 const Editor = ({ sync }: PropsType) => {
   return (
     <footer className={style.footer}>
-      {sync ? '✅ Synced!' : '❌ Unsync'}
+      {sync ? 'Synced! ✅' : 'Unsynced ❌'}
     </footer>
   )
 }

@@ -37,7 +37,7 @@ const Display = ({ code }: PropsType) => {
     return () => {
       observer.disconnect()
     }
-  })
+  }, [])
   return (
     <div
       ref={ref}
