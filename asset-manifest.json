@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Dom-Observer/static/css/main.b2c75600.chunk.css",
-    "main.js": "/Dom-Observer/static/js/main.f262d673.chunk.js",
-    "main.js.map": "/Dom-Observer/static/js/main.f262d673.chunk.js.map",
+    "main.css": "/Dom-Observer/static/css/main.373f69f2.chunk.css",
+    "main.js": "/Dom-Observer/static/js/main.7236cb6c.chunk.js",
+    "main.js.map": "/Dom-Observer/static/js/main.7236cb6c.chunk.js.map",
     "runtime-main.js": "/Dom-Observer/static/js/runtime-main.85189102.js",
     "runtime-main.js.map": "/Dom-Observer/static/js/runtime-main.85189102.js.map",
     "static/css/2.0d8cb1d1.chunk.css": "/Dom-Observer/static/css/2.0d8cb1d1.chunk.css",
-    "static/js/2.5c201978.chunk.js": "/Dom-Observer/static/js/2.5c201978.chunk.js",
-    "static/js/2.5c201978.chunk.js.map": "/Dom-Observer/static/js/2.5c201978.chunk.js.map",
+    "static/js/2.b908eb5e.chunk.js": "/Dom-Observer/static/js/2.b908eb5e.chunk.js",
+    "static/js/2.b908eb5e.chunk.js.map": "/Dom-Observer/static/js/2.b908eb5e.chunk.js.map",
     "index.html": "/Dom-Observer/index.html",
     "static/css/2.0d8cb1d1.chunk.css.map": "/Dom-Observer/static/css/2.0d8cb1d1.chunk.css.map",
-    "static/css/main.b2c75600.chunk.css.map": "/Dom-Observer/static/css/main.b2c75600.chunk.css.map",
-    "static/js/2.5c201978.chunk.js.LICENSE.txt": "/Dom-Observer/static/js/2.5c201978.chunk.js.LICENSE.txt"
+    "static/css/main.373f69f2.chunk.css.map": "/Dom-Observer/static/css/main.373f69f2.chunk.css.map",
+    "static/js/2.b908eb5e.chunk.js.LICENSE.txt": "/Dom-Observer/static/js/2.b908eb5e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.85189102.js",
     "static/css/2.0d8cb1d1.chunk.css",
-    "static/js/2.5c201978.chunk.js",
-    "static/css/main.b2c75600.chunk.css",
-    "static/js/main.f262d673.chunk.js"
+    "static/js/2.b908eb5e.chunk.js",
+    "static/css/main.373f69f2.chunk.css",
+    "static/js/main.7236cb6c.chunk.js"
   ]
 }
