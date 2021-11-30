@@ -6,6 +6,7 @@ import { update, selectDom } from './features/dom'
 import Editor from './components/Editor'
 import Display from './components/Display'
 import Usage from './components/Usage'
+import Footer from './components/Footer'
 
 import style from './App.module.css'
 
@@ -43,6 +44,7 @@ const App = () => {
         <Display code={dom.code} />
       </div>
       <Usage />
+      <Footer sync={editor.sync} />
     </div>
   )
 }
